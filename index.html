@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IT Link</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('i2OSidvQgr2JA9eAM');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_bkolhb4', 'template_9yoqk8r', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script> -->
+
+</head>
+
+<body>
+    <header>
+        <div class="row ">
+            <div class="header-left col-xs-12 col-sm-12 col-md-11 col-lg-5">
+                <div class="box">
+                    <h1 class="logo">IT-LINK</h1>
+                    <h5>IT人材のSESする会社</h5>
+                    <h1 class="title">必要な才能を、<br>
+                        あるべき場所へ</h1>
+                    <h4 p-5>成功している人に人が寄ってくるので、まずは成功しているフリをしておけば集客ができて後に本当に成功する、というイメージです。</h4>
+                </div>
+
+
+            </div>
+
+            <div class="header-right  mt-3 col-xs-12 col-sm-12 col-md-10 col-lg-5">
+
+                <form id="contact-form" class="form-contact ">
+                    <h1 class="text-center pt-5">お問い合わせ</h1>
+                    <input type="hidden" name="contact_number">
+
+                    <input type="text" name="user_name" placeholder="お名前">
+                    <input type="text" name="user_name" placeholder="会社の名前">
+                    <input type="email" name="user_email" placeholder="メルアドレス  example@gmail.com">
+                    <textarea name="message" placeholder="メッセージ"></textarea>
+                    <input class="send" type="submit" value="送信">
+                </form>
+
+            </div>
+        </div>
+        <div class="row header-bottom d-flex">
+            <div class="col-3">
+                <h1>実績</h1>
+                <p>50社以上の企業様に満足いただいています。</p>
+            </div>
+            <div class="col-1">
+                <img src="imgs/axload.png" alt="">
+            </div>
+            <div class="col-1">
+                <img src="imgs/freee.jpeg" alt="">
+            </div>
+            <div class="col-1">
+                <img src="imgs/hitachi.jpeg" alt="">
+            </div>
+            <div class="col-1">
+                <img src="imgs/TTDC.jpeg" alt="">
+            </div>
+        </div>
+
+
+    </header>
+
+
+
+
+    <aside class="container">
+
+        <div class="container margin-top">
+            <div class="row ">
+                <h1 class="text-center title">採用事例</h1>
+                <span></span>
+                <div class="d-flex saiyo_div">
+                    <div class="saiyo">
+                        <h2>ReactJs(PG) N2</h2>
+                        <h3>インド国籍</h3>
+                        <h3>東京</h3>
+                    </div>
+                    <div class="saiyo">
+                        <h2>Java(SE) N1</h2>
+                        <h3>台湾国籍</h3>
+                        <h3>大阪</h3>
+                    </div>
+                    <div class="saiyo">
+                        <h2>UI/UX N2</h2>
+                        <h3>ロシア国籍</h3>
+                        <h3>東京</h3>
+                    </div>
+                    <div class="saiyo">
+                        <h2>PHP(SE) N1</h2>
+                        <h3>バングラデシュ</h3>
+                        <h3>神奈川</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container margin-top">
+            <h1 class="text-center title">エンジニア採用の現状</h1>
+            <div class="row enginer d-flex mt-5">
+                <div class="col-4 i-card-left">
+                    <h1>良い人材の <br> 採用難</h1>
+                </div>
+                <div class="col-4 i-card-right">
+                    <h1>良い人材の <br> 採用難</h1>
+                </div>
+
+                <div class="col-8 mt-5 ">
+                    <h1>外国籍エンジニアのご採用をサポートいたします！</h1>
+                </div>
+
+                <div class="col-8 mt-5 ">
+                    <h1>初期費用無料の完全成果報酬</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container margin-top">
+            <h1 class="text-center title">エンジニア情報</h1>
+            <div class="row enginer-info">
+                <div class="col-4">
+                    <h1>IT-LINK</h1>
+                </div>
+                <div class="col-4">
+                    <h1>700人以上の登録</h1>
+                    <h1> 国内７：海外３</h1>
+                </div>
+            </div>
+            <div class="row mt-5 enginer-info-skill">
+                <div class="col-5">
+                    <h1 class="text-center">さまざまな開発言語</h1>
+                    <div>
+                        <img src="imgs/skill.png" alt="">
+                        <p class="java">Javaをはじめとするさまざまな技術を用いた人材、上流から下流工程まで担当のできる人材からPGに特化した人材までご紹介可能です。</p>
+
+                    </div>
+                </div>
+                <div class="col-5">
+                    <h1 class="text-center">高い日本語能力</h1>
+                    <div>
+                        <img src="imgs/jp.png" alt="">
+                        <p>ご紹介させていただく人材のほとんどが、JLPT
+                            N3からN1の資格を取得しており、日系企業または、外資系日本法人出身であるため、日本語での高いコミュニケーションと日本のビジネス文化を理解しています。</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container margin-top">
+            <h1 class="text-center  title">紹介までの流れ</h1>
+            <div class="col-12 process">
+                <img src="imgs/process.png" alt="">
+            </div>
+        </div>
+
+
+
+        </div>
+
+    </aside>
+
+
+    <footer class="mt-5">
+        <h1 class="text-center pt-5">ご連絡、ご相談お待ちしております。</h1>
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-6 ">
+                    <iframe class="rounded-3"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d265.23967204689643!2d139.73262400814323!3d35.674769562774365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c7fd297ea89%3A0xaf0fbb4ca55d0f40!2z44ix44Oq44Oz44Kv44K544K_44OD44OV!5e0!3m2!1sen!2sjp!4v1678787019643!5m2!1sen!2sjp"
+                        width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-6 footer-info">
+                    <a class="denwa-bango" href="tel:03-3401-8901"> 03-3401-8901</a>
+                    <h2>グローバルソリューション事業部</h2>
+                    <h2>株式会社リンクスタッフ <br>
+                        東京都港区赤坂赤坂第一ビル 5F <br>
+                        グローバルソリューション事業部</h2>
+                    <h2>TEL :03-3401-8901</h2>
+                    <a href="#">© 1996-2023 Linkstaff Co.,Ltd. All rights reserved.</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

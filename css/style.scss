@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+$mainColor: rgb(0, 28, 105);
+$subMainColor : rgba(0, 39, 73, 0.89);
+
+// betsu no class start 
+.title {
+    font-size: 64px;
+    font-weight: bold;
+
+
+}
+
+
+
+
+
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/imgs/pexels-pixabay-531880.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+
+
+    .header-left {
+        background-color: rgba(255, 255, 255, 0.493);
+        margin: 50px 0 0 50px;
+        border-radius: 10px;
+
+        div {
+            h5 {
+                letter-spacing: 5px;
+                margin-top: 10%;
+                color: white;
+            }
+
+            .title {
+                color: white;
+                letter-spacing: 10px;
+                text-shadow: 0 0 2px black;
+            }
+
+            h4 {
+                color: white;
+                text-shadow: 0 0 2px black;
+            }
+
+        }
+
+        .logo {
+            font-size: 75px;
+            letter-spacing: 6px;
+            font-family: 'Inconsolata', monospace;
+            font-family: 'Noto Serif JP', serif;
+            font-weight: 900;
+            color: $mainColor;
+
+
+        }
+
+    }
+
+}
+
+.header-right {
+    display: flex;
+    justify-content: end;
+}
+
+.form-contact {
+    background-color: rgba(255, 255, 255, 0.493);
+    height: 500px;
+    border-radius: 5px;
+
+    h1 {
+        color: $mainColor;
+
+    }
+
+
+    input {
+        width: 90%;
+        margin: 10px;
+        border-radius: 5px;
+        padding: 0 10px;
+        height: 8%;
+        border: none;
+    }
+
+    textarea {
+        width: 90%;
+        margin: 10px;
+        height: 20%;
+        border-radius: 5px;
+        padding: 0 10px;
+    }
+
+    .send {
+        font-weight: bold;
+    }
+
+    .send:hover {
+        box-shadow: 0 0 5px black inset;
+        cursor: pointer;
+    }
+
+}
+
+.header-bottom {
+    background-color: #3be7d0cc;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    div {
+        color: white;
+        text-shadow: 0 0 2px black;
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            // background-color: white;
+        }
+    }
+}
+
+
+
+
+
+// .jisseki start 
+.jisseki {
+    justify-content: space-between;
+
+    img {
+        width: 20%;
+        height: auto;
+    }
+}
+
+// .jisseki end 
+
+
+// saiyo start 
+
+.saiyo_div {
+    justify-content: space-between;
+}
+
+.saiyo {
+    background-image: url("../imgs/skills.png");
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 7% 0;
+
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
+
+// saiyo end 
+
+
+.margin-top {
+    margin-top: 10%;
+}
+
+
+// enginer start 
+.enginer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .i-card-left,
+    .i-card-right {
+        padding: 20px 40px;
+        // border: 1px solid $mainColor;
+        box-shadow: 0 0 4px #f8f8f8e7;
+        text-align: center;
+        border-radius: 5px;
+        background-color: #3BC0AF;
+        color: white;
+        letter-spacing: 4px;
+        cursor: pointer;
+    }
+
+    div:nth-child(3) {
+        background-color: #3BC0AF;
+        padding: 10px 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 3px black;
+        color: white;
+        text-align: center;
+    }
+
+    div:nth-child(4) {
+        background-color: #3BC0AF;
+        padding: 10px 30px;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        // border: 5px solid rgb(0, 250, 0);
+        box-shadow: 0 0 3px black;
+    }
+
+}
+
+// .enginer end 
+
+
+// .enginer info start 
+.enginer-info {
+    justify-content: space-around;
+    align-items: center;
+
+    div:nth-child(1) {
+        h1 {
+            padding-top: 10px;
+            font-size: 72px;
+            font-weight: 900;
+            color: $mainColor;
+            letter-spacing: 6px;
+            font-family: 'Inconsolata', monospace;
+            text-shadow: 0 0 3px $mainColor ;
+
+        }
+    }
+
+    div:nth-child(2) {
+        h1:nth-child(2) {
+            font-weight: bold;
+            letter-spacing: 6px;
+            font-family: 'Inconsolata', monospace;
+            text-shadow: 0 0 2px black;
+        }
+    }
+}
+
+.enginer-info-skill {
+
+    justify-content: center;
+    gap: 30px;
+
+
+
+    div:nth-child(1),
+    div:nth-child(2) {
+
+        div {
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='18' ry='18' stroke='black' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='22' stroke-linecap='square'/%3e%3c/svg%3e");
+            border-radius: 18px;
+
+            h1 {
+                text-align: center;
+                letter-spacing: 6px;
+                font-family: 'Inconsolata', monospace;
+                font-family: 'Noto Serif JP', serif;
+                font-weight: 900;
+            }
+
+            img {
+                width: 100%;
+                padding: 10px;
+
+
+
+            }
+
+            p {
+                padding: 10px 20px;
+                font-size: 22px;
+                font-family: 'Inconsolata', monospace;
+                font-family: 'Noto Serif JP', serif;
+                font-weight: 600;
+
+            }
+
+            .java {
+                line-height: 55px;
+            }
+        }
+
+
+
+
+
+    }
+}
+
+// .enginer info end
+
+
+
+// process start 
+
+.process {
+
+    img {
+        width: 100%;
+    }
+}
+
+// process end 
+
+
+footer {
+    width: 100%;
+    background-color: #3BC0AF;
+    color: white;
+}
+
+.footer-info {
+    h2 {
+        text-align: center;
+        font-size: 25px;
+        padding: 10px 5px;
+        letter-spacing: 3px;
+    }
+
+    .denwa-bango {
+        display: block;
+        font-size: 42px;
+        letter-spacing: 7px;
+        border: 2px solid rgb(8, 0, 121);
+        border-radius: 10px;
+        box-shadow: 0 0 5px black inset;
+        font-style: normal;
+
+        &:hover {
+            box-shadow: 0 0 30px inset black;
+            cursor: pointer;
+            color: black;
+            text-shadow: 0 0 2px black;
+        }
+    }
+
+    a {
+        font-style: italic;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+
+        &:hover {
+            color: rgb(30, 255, 0);
+
+        }
+    }
+
+}
+
+
+
+
+// media start 
+@media (min-width: 970px) {
+ .logo {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .header-left > div > h5 {
+        background-color: rebeccapurple;
+        margin: 0;
+    }
+
+ 
+
+  
+
+
+}

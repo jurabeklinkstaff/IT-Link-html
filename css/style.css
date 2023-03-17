@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/imgs/pexels-pixabay-531880.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+header .header-left {
+  background-color: rgba(255, 255, 255, 0.493);
+  margin: 50px 0 0 50px;
+  border-radius: 10px;
+}
+header .header-left div h5 {
+  letter-spacing: 5px;
+  margin-top: 10%;
+  color: white;
+}
+header .header-left div .title {
+  color: white;
+  letter-spacing: 10px;
+  text-shadow: 0 0 2px black;
+}
+header .header-left div h4 {
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+header .header-left .logo {
+  font-size: 75px;
+  letter-spacing: 6px;
+  font-family: "Inconsolata", monospace;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 900;
+  color: rgb(0, 28, 105);
+}
+
+.header-right {
+  display: flex;
+  justify-content: end;
+}
+
+.form-contact {
+  background-color: rgba(255, 255, 255, 0.493);
+  height: 500px;
+  border-radius: 5px;
+}
+.form-contact h1 {
+  color: rgb(0, 28, 105);
+}
+.form-contact input {
+  width: 90%;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 0 10px;
+  height: 8%;
+  border: none;
+}
+.form-contact textarea {
+  width: 90%;
+  margin: 10px;
+  height: 20%;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+.form-contact .send {
+  font-weight: bold;
+}
+.form-contact .send:hover {
+  box-shadow: 0 0 5px black inset;
+  cursor: pointer;
+}
+
+.header-bottom {
+  background-color: rgba(59, 231, 208, 0.8);
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header-bottom div {
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+.header-bottom div img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.jisseki {
+  justify-content: space-between;
+}
+.jisseki img {
+  width: 20%;
+  height: auto;
+}
+
+.saiyo_div {
+  justify-content: space-between;
+}
+
+.saiyo {
+  background-image: url("../imgs/skills.png");
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 7% 0;
+}
+.saiyo h2 {
+  text-align: center;
+}
+.saiyo h3 {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.margin-top {
+  margin-top: 10%;
+}
+
+.enginer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.enginer .i-card-left,
+.enginer .i-card-right {
+  padding: 20px 40px;
+  box-shadow: 0 0 4px rgba(248, 248, 248, 0.9058823529);
+  text-align: center;
+  border-radius: 5px;
+  background-color: #3BC0AF;
+  color: white;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+.enginer div:nth-child(3) {
+  background-color: #3BC0AF;
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px black;
+  color: white;
+  text-align: center;
+}
+.enginer div:nth-child(4) {
+  background-color: #3BC0AF;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 3px black;
+}
+
+.enginer-info {
+  justify-content: space-around;
+  align-items: center;
+}
+.enginer-info div:nth-child(1) h1 {
+  padding-top: 10px;
+  font-size: 72px;
+  font-weight: 900;
+  color: rgb(0, 28, 105);
+  letter-spacing: 6px;
+  font-family: "Inconsolata", monospace;
+  text-shadow: 0 0 3px rgb(0, 28, 105);
+}
+.enginer-info div:nth-child(2) h1:nth-child(2) {
+  font-weight: bold;
+  letter-spacing: 6px;
+  font-family: "Inconsolata", monospace;
+  text-shadow: 0 0 2px black;
+}
+
+.enginer-info-skill {
+  justify-content: center;
+  gap: 30px;
+}
+.enginer-info-skill div:nth-child(1) div,
+.enginer-info-skill div:nth-child(2) div {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='18' ry='18' stroke='black' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='22' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 18px;
+}
+.enginer-info-skill div:nth-child(1) div h1,
+.enginer-info-skill div:nth-child(2) div h1 {
+  text-align: center;
+  letter-spacing: 6px;
+  font-family: "Inconsolata", monospace;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 900;
+}
+.enginer-info-skill div:nth-child(1) div img,
+.enginer-info-skill div:nth-child(2) div img {
+  width: 100%;
+  padding: 10px;
+}
+.enginer-info-skill div:nth-child(1) div p,
+.enginer-info-skill div:nth-child(2) div p {
+  padding: 10px 20px;
+  font-size: 22px;
+  font-family: "Inconsolata", monospace;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+}
+.enginer-info-skill div:nth-child(1) div .java,
+.enginer-info-skill div:nth-child(2) div .java {
+  line-height: 55px;
+}
+
+.process img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: #3BC0AF;
+  color: white;
+}
+
+.footer-info h2 {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px 5px;
+  letter-spacing: 3px;
+}
+.footer-info .denwa-bango {
+  display: block;
+  font-size: 42px;
+  letter-spacing: 7px;
+  border: 2px solid rgb(8, 0, 121);
+  border-radius: 10px;
+  box-shadow: 0 0 5px black inset;
+  font-style: normal;
+}
+.footer-info .denwa-bango:hover {
+  box-shadow: 0 0 30px inset black;
+  cursor: pointer;
+  color: black;
+  text-shadow: 0 0 2px black;
+}
+.footer-info a {
+  font-style: italic;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+}
+.footer-info a:hover {
+  color: rgb(30, 255, 0);
+}
+
+@media (min-width: 970px) {
+  .logo {
+    font-size: 50px;
+    text-align: center;
+  }
+  .header-left > div > h5 {
+    background-color: rebeccapurple;
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
