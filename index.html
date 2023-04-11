@@ -1,229 +1,532 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>IT Link</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap"
-        rel="stylesheet">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <title>IT LINK</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init('i2OSidvQgr2JA9eAM');
         })();
     </script>
     <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
                 emailjs.sendForm('service_bkolhb4', 'template_9yoqk8r', this)
-                    .then(function() {
+                    .then(function () {
                         console.log('SUCCESS!');
-                    }, function(error) {
+                        alert("メールが届きました。\n" +
+                            "[OK] ボタンをクリックお願いします。")
+                        location.reload();
+                    }, function (error) {
                         console.log('FAILED...', error);
                     });
             });
         }
-    </script> -->
+    </script>
+
 
 </head>
 
 <body>
-    <header>
-        <div class="row ">
-            <div class="header-left col-xs-12 col-sm-12 col-md-11 col-lg-5">
-                <div class="box">
-                    <h1 class="logo">IT-LINK</h1>
-                    <h5>IT人材のSESする会社</h5>
-                    <h1 class="title">必要な才能を、<br>
-                        あるべき場所へ</h1>
-                    <h4 p-5>成功している人に人が寄ってくるので、まずは成功しているフリをしておけば集客ができて後に本当に成功する、というイメージです。</h4>
-                </div>
 
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center" style="background-color:#f3f9fd">
+    <div class="container d-flex align-items-center justify-content-between">
 
-            </div>
-
-            <div class="header-right  mt-3 col-xs-12 col-sm-12 col-md-10 col-lg-5">
-
-                <form id="contact-form" class="form-contact ">
-                    <h1 class="text-center pt-5">お問い合わせ</h1>
-                    <input type="hidden" name="contact_number">
-
-                    <input type="text" name="user_name" placeholder="お名前">
-                    <input type="text" name="user_name" placeholder="会社の名前">
-                    <input type="email" name="user_email" placeholder="メルアドレス  example@gmail.com">
-                    <textarea name="message" placeholder="メッセージ"></textarea>
-                    <input class="send" type="submit" value="送信">
-                </form>
-
-            </div>
-        </div>
-        <div class="row header-bottom d-flex">
-            <div class="col-3">
-                <h1>実績</h1>
-                <p>50社以上の企業様に満足いただいています。</p>
-            </div>
-            <div class="col-1">
-                <img src="imgs/axload.png" alt="">
-            </div>
-            <div class="col-1">
-                <img src="imgs/freee.jpeg" alt="">
-            </div>
-            <div class="col-1">
-                <img src="imgs/hitachi.jpeg" alt="">
-            </div>
-            <div class="col-1">
-                <img src="imgs/TTDC.jpeg" alt="">
-            </div>
+        <div class="logo">
+            <h1><a href="index.html" class="logo">IT LINK</a></h1>
         </div>
 
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#hero">トップページ</a></li>
+                <li><a class="nav-link scrollto" href="#about">採用事例</a></li>
+                <li><a class="nav-link scrollto" href="#clients">相棒</a></li>
+                <li><a class="nav-link scrollto " href="#services">エンジニア採用の現状</a></li>
+                <li><a class="nav-link scrollto" href="#more-services">エンジニア情報</a></li>
+                <li><a class="nav-link scrollto" href="#features">紹介までの流れ</a></li>
+                <li><a class="nav-link scrollto" href="#contact">お問い合わせ</a></li>
+                <li><a class="getstarted scrollto" href="tel:0334018901">今直ぐ電話</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
 
-    </header>
+    </div>
+</header><!-- End Header -->
 
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
 
-
-
-    <aside class="container">
-
-        <div class="container margin-top">
-            <div class="row ">
-                <h1 class="text-center title">採用事例</h1>
-                <span></span>
-                <div class="d-flex saiyo_div">
-                    <div class="saiyo">
-                        <h2>ReactJs(PG) N2</h2>
-                        <h3>インド国籍</h3>
-                        <h3>東京</h3>
-                    </div>
-                    <div class="saiyo">
-                        <h2>Java(SE) N1</h2>
-                        <h3>台湾国籍</h3>
-                        <h3>大阪</h3>
-                    </div>
-                    <div class="saiyo">
-                        <h2>UI/UX N2</h2>
-                        <h3>ロシア国籍</h3>
-                        <h3>東京</h3>
-                    </div>
-                    <div class="saiyo">
-                        <h2>PHP(SE) N1</h2>
-                        <h3>バングラデシュ</h3>
-                        <h3>神奈川</h3>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="container margin-top">
-            <h1 class="text-center title">エンジニア採用の現状</h1>
-            <div class="row enginer d-flex mt-5">
-                <div class="col-4 i-card-left">
-                    <h1>良い人材の <br> 採用難</h1>
-                </div>
-                <div class="col-4 i-card-right">
-                    <h1>良い人材の <br> 採用難</h1>
-                </div>
-
-                <div class="col-8 mt-5 ">
-                    <h1>外国籍エンジニアのご採用をサポートいたします！</h1>
-                </div>
-
-                <div class="col-8 mt-5 ">
-                    <h1>初期費用無料の完全成果報酬</h1>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container margin-top">
-            <h1 class="text-center title">エンジニア情報</h1>
-            <div class="row enginer-info">
-                <div class="col-4">
-                    <h1>IT-LINK</h1>
-                </div>
-                <div class="col-4">
-                    <h1>700人以上の登録</h1>
-                    <h1> 国内７：海外３</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                <h1 data-aos="fade-up">必要な才能を、<br>
+                    あるべき場所へ</h1>
+                <h2 data-aos="fade-up" data-aos-delay="400">IT人材のSESする会社</h2>
+                <div data-aos="fade-up" data-aos-delay="800">
+                    <a href="#contact" class="btn-get-started scrollto">お問い合わせ</a>
                 </div>
             </div>
-            <div class="row mt-5 enginer-info-skill">
-                <div class="col-5">
-                    <h1 class="text-center">さまざまな開発言語</h1>
-                    <div>
-                        <img src="imgs/skill.png" alt="">
-                        <p class="java">Javaをはじめとするさまざまな技術を用いた人材、上流から下流工程まで担当のできる人材からPGに特化した人材までご紹介可能です。</p>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+                <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+                <!--                <form id="contact-form" class="form-contact img-fluid animated">-->
+                <!--                    <h1 class="text-center pt-5">お問い合わせ</h1>-->
+                <!--                    <input type="hidden" name="contact_number">-->
 
-                    </div>
-                </div>
-                <div class="col-5">
-                    <h1 class="text-center">高い日本語能力</h1>
-                    <div>
-                        <img src="imgs/jp.png" alt="">
-                        <p>ご紹介させていただく人材のほとんどが、JLPT
-                            N3からN1の資格を取得しており、日系企業または、外資系日本法人出身であるため、日本語での高いコミュニケーションと日本のビジネス文化を理解しています。</p>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="container margin-top">
-            <h1 class="text-center  title">紹介までの流れ</h1>
-            <div class="col-12 process">
-                <img src="imgs/process.png" alt="">
+                <!--                    <input type="text" name="user_name" placeholder="お名前">-->
+                <!--                    <input type="text" name="user_name" placeholder="会社の名前">-->
+                <!--                    <input type="email" name="user_email" placeholder="メルアドレス  example@gmail.com">-->
+                <!--                    <textarea name="message" placeholder="メッセージ"></textarea>-->
+                <!--                    <input class="send" type="submit" value="送信">-->
+                <!--                </form>-->
             </div>
         </div>
+    </div>
 
+</section><!-- End Hero -->
 
+<main id="main">
 
-        </div>
-
-    </aside>
-
-
-    <footer class="mt-5">
-        <h1 class="text-center pt-5">ご連絡、ご相談お待ちしております。</h1>
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients clients">
         <div class="container">
-            <div class="row p-5">
-                <div class="col-6 ">
-                    <iframe class="rounded-3"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d265.23967204689643!2d139.73262400814323!3d35.674769562774365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c7fd297ea89%3A0xaf0fbb4ca55d0f40!2z44ix44Oq44Oz44Kv44K544K_44OD44OV!5e0!3m2!1sen!2sjp!4v1678787019643!5m2!1sen!2sjp"
-                        width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="row">
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="assets/img/clients/freee.jpeg" class="img-fluid" alt="" data-aos="zoom-in">
                 </div>
-                <div class="col-6 footer-info">
-                    <a class="denwa-bango" href="tel:03-3401-8901"> 03-3401-8901</a>
-                    <h2>グローバルソリューション事業部</h2>
-                    <h2>株式会社リンクスタッフ <br>
-                        東京都港区赤坂赤坂第一ビル 5F <br>
-                        グローバルソリューション事業部</h2>
-                    <h2>TEL :03-3401-8901</h2>
-                    <a href="#">© 1996-2023 Linkstaff Co.,Ltd. All rights reserved.</a>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="assets/img/clients/hitachi.jpeg" class="img-fluid" alt="" data-aos="zoom-in"
+                         data-aos-delay="100">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="assets/img/clients/intec.jpeg" class="img-fluid" alt="" data-aos="zoom-in"
+                         data-aos-delay="200">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="assets/img/clients/TTDC.jpeg" class="img-fluid" alt="" data-aos="zoom-in"
+                         data-aos-delay="300">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="assets/img/clients/client-1.png" class="img-fluid" alt="" data-aos="zoom-in"
+                         data-aos-delay="400">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="assets/img/clients/freee.jpeg" class="img-fluid" alt="" data-aos="zoom-in"
+                         data-aos-delay="500">
+                </div>
+
+            </div>
+
+            <div class="row ">
+                <div class="col-md-12 mt-4">
+                    <h3>実績 - 50社以上の企業様に満足いただいています。</h3>
                 </div>
             </div>
-        </div>
-    </footer>
 
+        </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>採用事例</h2>
+            </div>
+
+            <div class="row content">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+                    <h3>事業内容採用サポートSES </h3>
+                    <h5>IT人材の獲得が厳しくなっている課題を解決いたします</h5>
+
+                    <ul class="skill-li mt-4">
+                        <li><i class="ri-check-double-line "></i>　<b>ReactJs(PG) N2</b> , インド国籍 , 東京
+                        </li>
+                        <li><i class="ri-check-double-line"></i>　<b>Java(SE) N1</b> ,台湾国籍 , 大阪
+                        </li>
+                        <li><i class="ri-check-double-line"></i>　<b>Full stack web(SE) N2</b> ,ウズベキスタン籍 ,東京
+                        </li>
+                        <li><i class="ri-check-double-line"></i>　<b>UI/UX N2</b> ,ロシア国籍 , 東京
+                        </li>
+                        <li><i class="ri-check-double-line"></i>　<b>PHP(SE) N1</b> ,バングラデシュ , 神奈川
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                    <p>
+                        今後人材の獲得難が課題となる中、海外の人材確保の必要性がますます高くなり、日本のIT市場の成長には海外の優秀な人材の参入が切っても切れない存在になりうると想定されます。弊社は、そのような状況下に対し、国内のIT企業に計２０カ国の国籍のエンジニアを提案してまいりました。
+                    </p>
+                    <p>
+                        <!--                        ITラストフロンティア　バングラディッシュ-->
+                        <!--                        その中でも、バングラディッシュは多くのIT人材を有しており、現地ではIT人材の非常に激しい市場争いが起こっております。-->
+                        <!--                        そのようなバングラディッシュで、弊社は現地の優秀な上位10校の大学と提携を結び、選りすぐりの人材を確保し、日本のIT企業のニーズに応じた人材支援を提供いたします-->
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+        <div class="container">
+
+            <div class="row">
+                <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start"
+                     data-aos="fade-right" data-aos-delay="150">
+                    <img src="assets/img/counts-img.svg" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+                    <div class="content d-flex flex-column justify-content-center">
+                        <div class="row">
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="bi bi-person-fill-check"></i>
+                                    <span data-purecounter-start="0" data-purecounter-end="800"
+                                          data-purecounter-duration="1" class="purecounter"></span>
+                                    <p>すべてのエンジニア　800人上</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="bi bi-building-check"></i>
+                                    <span data-purecounter-start="0" data-purecounter-end="50"
+                                          data-purecounter-duration="1" class="purecounter"></span>
+                                    <p>パートナー企業　50企業上</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="bi bi-person-up"></i>
+                                    <span data-purecounter-start="0" data-purecounter-end="60"
+                                          data-purecounter-duration="1" class="purecounter"></span>
+                                    <p>SESで働く方　60人上</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="bi bi-person-lines-fill"></i>
+                                    <span data-purecounter-start="0" data-purecounter-end="120"
+                                          data-purecounter-duration="1" class="purecounter"></span>
+                                    <p>SESでこれから働く方　120人上</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End .content-->
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>エンジニア採用の現状</h2>
+
+            </div>
+
+            <div class="row enginers">
+                <div class="col-md-9 col-lg-9 mx-auto ">
+                    <div class="icon-box" data-aos="fade-up">
+                        <div class="icon"><i class="bi bi-1-circle"></i></div>
+                        <h1 class=" text-center title002 ">良い人材の 採用難</h1>
+                        <p class="description text-center border-1">・ 転職市場によい人材がそもそもいない <br>
+                            ・採用競争は年々激化。給与は上昇。</p>
+                    </div>
+                </div>
+
+                <div class="col-md-9 col-lg-9 mx-auto  mt-3">
+                    <div class="icon-box" data-aos="fade-up">
+                        <div class="icon"><i class="bi bi-2-circle"></i></div>
+                        <h1 class=" text-center title002">未経験の採用リスクがある</h1>
+                        <p class="description text-center border-1">・ 社内に教育体制がない <br>
+                            ・教えてる時間がない</p>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center gap-5">
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0 mt-3">
+                        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon"><i class="bi bi-info-circle"></i></div>
+                            <h4 class="title"><a href="">外国籍エンジニアのご採用をサポートいたします！</a></h4>
+                            <p class="description">少し　コメント　少し　コメント　少し　コメント　少し　コメント</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0 mt-3">
+                        <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon"><i class="bi bi-infinity"></i></div>
+                            <h4 class="title"><a href="">初期費用無料の完全成果報酬</a></h4>
+                            <p class="description">少し　コメント　少し　コメント　少し　コメント　少し　コメント</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= More Services Section ======= -->
+    <section id="more-services" class="more-services">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>エンジニア情報</h2>
+
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-4  align-items-stretch ">
+                    <div class="card-footer">
+                        <h2 class="text-center p-2"><b>IT-LINK</b></h2>
+                        <h4 class="text-center mt-3"><b>さまざまな開発言語</b></h4>
+                    </div>
+                    <div class="skills d-flex justify-content-end">
+
+                    </div>
+                    <p class="text-center mt-5 ">Javaをはじめとするさまざまな技術を用いた人材、
+                        <br>上流から下流工程まで <br>
+                        担当のできる人材から <br>
+                        PGに特化した人材までご紹介可能です。</p>
+                </div>
+
+                <div class="col-md-4  align-items-stretch ">
+                    <div class="card-footer">
+                        <h2 class="text-center p-2"><b>700人以上の登録 <br>
+                        </b></h2>
+                        <h5 class="text-center ">国内７：海外３</h5>
+                        <h5 class="text-center mt-4"><b>高い日本語能力</b></h5>
+                    </div>
+                    <div class=" skills2">
+
+                    </div>
+                    <p class="text-center mt-4">ご紹介させていただく人材のほとんどが、<br>
+                        JLPT N3からN1の資格を取得しており、日系企業または、<br>
+                        外資系日本法人出身であるため、<br>
+                        日本語での高いコミュニケーションと日本の <br>
+                        ビジネス文化を理解しています。</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+    </section><!-- End More Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>紹介までの流れ</h2>
+            </div>
+
+            <div class="row mx-auto arrow " data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-3 col-md-4 ">
+                    <div class="icon-box shokai">
+                        <i class="bi bi-1-square" style="color: #ffbb2c;"></i>
+                        <h3><a href="#">条件のヒアリング</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box shokai">
+                        <i class="bi bi-2-square" style="color: #5578ff;"></i>
+                        <h3><a href="#">募集と選別</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box shokai">
+                        <i class="bi bi-3-square" style="color: #e80368;"></i>
+                        <h3><a href="">面接</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+                    <div class="icon-box shokai">
+                        <i class="bi bi-4-square" style="color: #e361ff;"></i>
+                        <h3><a href="">雇用と帳簿</a></h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Features Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>ご連絡、ご相談お待ちしております。</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-about">
+                        <h5>グローバルソリューション事業部</h5>
+                        <iframe class="rounded-3"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d265.23967204689643!2d139.73262400814323!3d35.674769562774365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c7fd297ea89%3A0xaf0fbb4ca55d0f40!2z44ix44Oq44Oz44Kv44K544K_44OD44OV!5e0!3m2!1sen!2sjp!4v1678787019643!5m2!1sen!2sjp"
+                                width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="social-links">
+                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="info">
+                        <div>
+                            <i class="ri-map-pin-line"></i>
+                            <p>株式会社リンクスタッフ <br>
+                                東京都港区赤坂赤坂第一ビル 5F </p>
+                        </div>
+
+                        <div>
+                            <i class="ri-mail-send-line"></i>
+                            <p>t-sugita@linkstaff.co.jp</p>
+                        </div>
+
+                        <div>
+                            <i class="ri-phone-line"></i>
+                            <p>03-3401-8901</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+                    <h1 class="text-center pt-5">お問い合わせ</h1>
+
+                    <form id="contact-form" role="form" class="php-email-form">
+                        <input type="hidden" name="contact_number">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="お名前"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="company" id="company_name"
+                                   placeholder="会社の名前"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="user_email" id="user_email"
+                                   placeholder="メル-アドレス  example@gmail.com"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="テーマ"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="メッセージ"
+                                      required></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit">送信</button>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-6 text-lg-left text-center">
+                <div class="copyright">
+                    &copy; Copyright <strong>Link Staff Co., Ltd.</strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    同社のメインWebサイト <a href="https://www.linkstaff.co.jp/" target="_blank">㈱リンクスタッフ</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+                    <a href="#hero" class="scrollto">トップページ</a>
+                    <a href="#services" class="scrollto">エンジニア採用の現状</a>
+                    <a href="#">プライバシーポリシー</a>
+                    <a href="#about">採用事例</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
 
 </body>
 
